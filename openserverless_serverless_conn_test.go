@@ -19,7 +19,7 @@ func main() {
 
 
         awsCfg, err := config.LoadDefaultConfig(ctx,
-                config.WithRegion(os.Getenv("AWS_AWS_REGION")),
+                config.WithRegion(os.Getenv("AWS_REGION")),
         )
         if err != nil {
                 log.Fatalf("failed to load aws configuraiton: %v", err) // Do not log.fatal in a production ready app.
