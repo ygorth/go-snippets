@@ -13,7 +13,7 @@ import (
 func main() {
         ctx := context.Background()
 
-        var endpoint = os.Getenv("OPENSEARCH_ENDPOINT")
+        var endpoint = os.Getenv("AWS_OPENSEARCH_ENDPOINT")
 
         awsCfg, err := config.LoadDefaultConfig(ctx,
                 config.WithRegion(os.Getenv("AWS_REGION")),
